@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+    <form action="index"  method='post'>
+
+    {% csrf_token %}
+    <center><p>Hello: {{ name }}<br>
+    Here are the answers you selected:<br>
+    Who is the best cricketer in tht world?<br>
+    Answer: {{ answer}}<br>
+    What are the colors in the national flag?<br>
+    Answers: {{ choice }}<br><br></p>
+
+	<button type="submit">Finish</button>
+	<button type="submit">History</button></center>
+	
+{% endblock %}

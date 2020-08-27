@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+
+    <form action="quest"  method='post'>
+
+    {% csrf_token %}
+        <center><strong>What is you name? : <input type="text" placeholder="Name" name="name1" required><br><br>
+            <button type="submit">Next</button></strong>
+    </form>
+
+{% endblock %}
